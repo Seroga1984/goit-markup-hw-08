@@ -1,0 +1,70 @@
+.mobile-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 40px;
+    padding-top: 48px;
+
+
+    background-color: #fff;
+    @include mq(tablet) {
+        display: none;
+      }
+}
+
+
+.mobile-menu {
+    display: none;
+   
+    }
+
+
+.mobile-menu.is-open {
+    @include mq(mobile-only) {
+        display: block;}
+    
+}
+
+
+.menu-button {
+display: inline-flex;
+margin: 0;
+padding: 0;
+border: none;
+background-color: transparent;
+
+}
+
+.menu-button .icon-cross {
+ display: none;  
+
+}
+
+.menu-button.is-open .icon-cross {
+    display: block;
+}
+
+.menu-button.is-open .icon-menu {
+    display: none;
+}
+
+
+
+
+ 
+.menu-button:focus .icon-cross,
+.menu-button:hover .icon-cross 
+ {
+    fill: var(--accent-txt-color--);
+}
+
+.menu-button:focus .icon-menu,
+.menu-button:hover .icon-menu 
+ {
+    fill: var(--accent-txt-color--);
+}
+
+
+
