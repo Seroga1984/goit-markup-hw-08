@@ -18,6 +18,24 @@
     background-size: cover;
     margin-left: auto;
     margin-right: auto;
+    
+
+    @include mq(mobile-only){
+     
+      padding-top: 118px;
+      padding-bottom: 118px;
+      max-width: 480px;
+      height: 400px;
+    }
+    @include mq(tablet-only){
+      
+      
+      padding-top: 118px;
+      padding-bottom: 118px;
+      max-width: 768px;
+      height: 400px;}
+    
+
   
   &__title {
     font-weight: 900;
@@ -28,5 +46,33 @@
     text-transform: uppercase;
     color: var(--sekondari-txt-color2--);
     margin-bottom: 30px;
+
+    @include mq(mobile-only){
+
+    font-size: 26px;
+     line-height: 1.62;
+
+
+    text-align: center;
+        }
+        @include mq(tablet-only){
+          font-size: 26px;
+     line-height: 1.62;
+
+
+    text-align: center;
+        }   
   }
+  }
+
+  .hero-container {
+    @include mq(mobile-only){
+      max-width: 480px;
+      
+    }
+    @include mq(tablet-only){
+      max-width: 768px;}
+
+
+    
   }

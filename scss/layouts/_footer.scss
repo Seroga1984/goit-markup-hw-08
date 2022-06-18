@@ -9,10 +9,23 @@
 .footer-container {
   display: flex;
   align-items: baseline;
+
+  @include mq(mobile-only){
+    display: block;
+    max-width: 480px;
+    text-align: center;
+  }
+
+  @include mq(tablet-only){
+    max-width: 768px;
+    flex-wrap: wrap;
+  }
 }
 
 .address {
   margin-top: 20px;
+
+
 
   &__info {
     font-style: normal;
@@ -25,6 +38,23 @@
     margin-bottom: 9px;
   }
 
+  &__list {
+    @include mq(mobile-only){
+      display: inline-block;
+      text-align: center;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @include mq(tablet-only){
+      display: inline-block;
+      text-align: center;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
   &__item {
     font-style: normal;
     font-weight: 400;
@@ -33,6 +63,8 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 9px;
+    
+    
   }
 
   &__item:last-child {
@@ -42,6 +74,28 @@
 
 .address-box {
   margin-right: 70px;
+  @include mq(mobile-only){
+    margin-right: 0;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+  @include mq(tablet-only){
+    margin-right: 0;
+    width: 368px;
+    text-align: center;
+  }
+}
+
+.connect {
+  @include mq(mobile-only){
+    margin-bottom: 60px;
+  }
+  @include mq(tablet-only){
+    margin-right: 0;
+    width: 368px;
+    text-align: center;
+  }
 }
 
 .connect__title {

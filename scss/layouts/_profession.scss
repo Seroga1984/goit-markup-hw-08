@@ -2,6 +2,15 @@
 
 .profession {
   padding-bottom: 94px;
+  @include mq(mobile-only){
+    display: none;
+    
+  }
+  @include mq(tablet-only){
+    display: none;
+    
+    
+  }
 
   &__title {
     font-weight: 700;

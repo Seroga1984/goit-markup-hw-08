@@ -26,6 +26,15 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      @include mq(mobile-only){
+        margin-right: auto;
+        margin-left: auto;
+      }
+      @include mq(tablet-only){
+        margin-right: auto;
+        margin-left: auto;
+      }
+      
     }
   
     &__icon {

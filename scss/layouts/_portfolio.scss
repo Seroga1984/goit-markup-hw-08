@@ -3,6 +3,29 @@
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
+  @include mq(mobile-only){
+    padding-top: 60px;
+  padding-bottom: 60px;
+    
+  }
+  @include mq(tablet-only){
+    padding-top: 60px;
+  padding-bottom: 60px;
+    
+    
+  }
+
+  .portfolio-section {
+    @include mq(mobile-only){
+      max-width: 480px;
+      
+    }
+    @include mq(tablet-only){
+      max-width: 768px;
+      
+      
+    }
+  }
 
   &__title {
     position: absolute;
@@ -23,9 +46,17 @@
   margin-bottom: 50px;
   align-items: center;
   justify-content: center;
+  @include mq(mobile-only){
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-bottom: 25px;
+  }
 
   &__item {
     margin-right: 8px;
+    @include mq(mobile-only){
+      margin-bottom: 15px;
+    }
   }
 
   &__bt {
@@ -66,14 +97,44 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  @include mq(tablet-only){
+    gap: 30px;
+  }
+  @include mq(mobile-only){
+    display: block;
+    
+  }
 
   &__item {
     width: 370px;
+    @include mq(tablet-only){
+      width: 354px;
+      
+    }
+    @include mq(mobile-only){
+      width: 450px;
+      margin-bottom: 30px;
+    
+    }
+
+
+
+  }
+
+  &__item:last-child {
+    @include mq(mobile-only){
+      
+      margin-bottom: 0;
+    
+    }
   }
 
   &__content {
     padding: 20px 24px;
     border: 1px solid #eeeeee;
+    @include mq(tablet-only) {
+      padding: 20px 15px;
+    }
   }
 
   &__subtitle {

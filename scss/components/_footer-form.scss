@@ -3,6 +3,12 @@
 .footer-form {
     display: block;
     margin-left: auto;
+    @include mq(tablet-only){
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+      margin-top: 60px;
+    }
   }
   
   .footer-label {
@@ -10,6 +16,14 @@
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+    @include mq(mobile-only){
+      display: block;
+      text-align: center;
+      justify-content: center;
+    }
+    @include mq(tablet-only){
+      display: block;
+    }
   }
   
   .footer-lable__imput {
@@ -22,6 +36,16 @@
     color: var(--sekondari-txt-color2--);
     margin-right: 12px;
     background-color: var(--hero-footer-color);
+    @include mq(mobile-only){
+      margin-right: 0;
+      margin-bottom: 20px;
+      width: 450px;
+    }
+    @include mq(tablet-only){
+      margin-right: 0;
+      margin-bottom: 20px;
+      width: 450px;
+    }
   }
   .footer-lable__imput:focus {
     border: 1px solid #2196f3;

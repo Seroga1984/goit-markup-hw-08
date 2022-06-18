@@ -7,7 +7,21 @@
     letter-spacing: 0.03em;
     color: var(--accent-txt-color--);
     margin-right: 100px;
-  
+    @include mq(tablet-only){
+      margin-right: 88px;
+      
+      }
+    
+     @include mq(mobile-only){
+        margin-right: 0;}
+
+     @include mq(tablet-only){
+      margin-right: 0;
+     }
+        
+
+
+
     &__studio {
       color: var(--studio-txt-color--);
     }
