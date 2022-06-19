@@ -115,14 +115,19 @@
   }
   }
 
-  .hero-container {
-    @include mq(mobile-only){
-      max-width: 480px;
+  // .hero-container {
+  //   @include mq(mobilemin){
+  //     width: 320px;
+  //   }
+
+
+  //   @include mq(mobile-only){
+  //     width: 480px;
       
-    }
-    @include mq(tablet-only){
-      max-width: 768px;}
+  //   }
+  //   @include mq(tablet-only){
+  //     width: 768px;}
 
 
     
-  }
+  // }

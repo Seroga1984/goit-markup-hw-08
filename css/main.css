@@ -36,7 +36,6 @@ img {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -745,7 +744,6 @@ body {
 
 @media screen and (max-width: 767.98px) {
   .header__container {
-    width: 450px;
     height: 60px;
     padding: 15px;
     -webkit-box-pack: justify;
@@ -991,18 +989,6 @@ body {
     font-size: 26px;
     line-height: 1.62;
     text-align: center;
-  }
-}
-
-@media screen and (max-width: 767.98px) {
-  .hero-container {
-    max-width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
-  .hero-container {
-    max-width: 768px;
   }
 }
 
@@ -1357,13 +1343,13 @@ body {
 
 @media screen and (max-width: 767.98px) {
   .team-container {
-    max-width: 480px;
+    width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .team-container {
-    max-width: 768px;
+    width: 768px;
   }
 }
 
@@ -1488,14 +1474,14 @@ body {
 @media screen and (max-width: 767.98px) {
   .footer-container {
     display: block;
-    max-width: 480px;
+    width: 480px;
     text-align: center;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .footer-container {
-    max-width: 768px;
+    width: 768px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }

@@ -12,12 +12,12 @@
 
   @include mq(mobile-only){
     display: block;
-    max-width: 480px;
+    width: 480px;
     text-align: center;
   }
 
   @include mq(tablet-only){
-    max-width: 768px;
+    width: 768px;
     flex-wrap: wrap;
   }
 }

@@ -116,9 +116,9 @@
 
 .team-container {
   @include mq(mobile-only) {
-    max-width: 480px;
+    width: 480px;
   }
   @include mq(tablet-only) {
-    max-width: 768px;
+    width: 768px;
   }
 }
