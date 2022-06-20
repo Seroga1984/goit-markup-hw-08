@@ -19,12 +19,17 @@
       
     }
     .benefits-container {
+      @include mq(mobilemin-only) {
+          width: 320px;
+        }
+
+
       @include mq(mobile-only){
-        max-width: 480px;
+        width: 480px;
         
       }
       @include mq(tablet-only){
-        max-width: 768px;
+        width: 768px;
         
         
       }
@@ -49,7 +54,9 @@
   
   .benefits__list {
     display: flex;
-    width: 270px;
+    // width: 270px;
+    justify-content: center;
+    align-items: center;
     
     @include mq(mobile-only){
       display: block;

@@ -52,6 +52,8 @@
 
   &__list {
     display: flex;
+    justify-content: center;
+    align-items: center;
     @include mq(mobile-only){
       display: block;
       width: 450px;
