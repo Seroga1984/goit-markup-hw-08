@@ -26,14 +26,22 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
       @include mq(mobile-only){
         margin-right: auto;
-        margin-left: auto;
+          margin-left: auto;
       }
-      @include mq(tablet-only){
+
+      @include mq(mobile){
         margin-right: auto;
         margin-left: auto;
       }
+      @include mq(tablet){
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+       
       
     }
   

@@ -12,13 +12,29 @@
 
   @include mq(mobile-only){
     display: block;
+    text-align: center;
+
+  }
+
+  
+
+  @include mq(mobile){
+    display: block;
     width: 480px;
     text-align: center;
   }
 
-  @include mq(tablet-only){
+  @include mq(tablet){
+    display: flex;
     width: 768px;
     flex-wrap: wrap;
+  }
+
+  @include mq(desktop){
+    display: flex;
+    width: 1200px;
+    text-align: left;
+    align-items: baseline;
   }
 }
 

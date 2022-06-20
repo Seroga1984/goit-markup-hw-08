@@ -13,11 +13,11 @@
   }
 
   .clients-container {
-    @include mq(mobile-only){
+    @include mq(mobile){
       width: 480px;
       
     }
-    @include mq(tablet-only){
+    @include mq(tablet){
       width: 768px;
       
       
