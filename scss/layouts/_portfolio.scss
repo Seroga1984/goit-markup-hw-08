@@ -131,6 +131,7 @@
 
   &__item {
     width: 370px;
+    border: 1px solid #eeeeee;
 
 @include mq(mobile-only){
 width: 100%;
@@ -169,9 +170,9 @@ width: 100%;
 
   &__content {
     padding: 20px 24px;
-    border: 1px solid #eeeeee;
+    // border: 1px solid #eeeeee;
     @include mq(tablet) {
-      padding: 20px 15px;
+      padding: 20px 24px;
     }
   }
 
@@ -196,6 +197,7 @@ width: 100%;
     display: block;
     box-sizing: border-box;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    height: 100%;
   }
 
   &__an {
@@ -227,6 +229,19 @@ width: 100%;
     letter-spacing: 0.03em;
 
     color: var(--sekondari-txt-color2--);
+    @include mq(mobile-only) {
+      padding: 20px 20px;
+      font-size: 12px;
+
+
+    }
+        @include mq(mobile){
+          padding: 63px 24px;
+          font-size: 18px;
+
+        }
+
+
   }
 
   &__link:hover,

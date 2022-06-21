@@ -56,6 +56,13 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-txt-color--);
+  padding-top: 80px;
+}
+
+@media screen and (max-width: 767.98px) {
+  body {
+    padding-top: 61px;
+  }
 }
 
 .mobile-menu {
@@ -215,6 +222,18 @@ body {
   color: #2196F3;
 }
 
+@media screen and (max-width: 767.98px) {
+  .mobile-socials__link {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .mobile-socials__link {
+    font-size: 18px;
+  }
+}
+
 .mobil-contact__item {
   margin-bottom: 32px;
 }
@@ -244,6 +263,7 @@ body {
     text-align: left;
     margin-left: auto;
     margin-right: 0;
+    margin-top: 0;
   }
 }
 
@@ -574,6 +594,18 @@ body {
   cursor: pointer;
 }
 
+@media screen and (max-width: 767.98px) {
+  .close-bt {
+    top: 20px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .close-bt {
+    top: 8px;
+  }
+}
+
 .close-bt__icon-x {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -781,7 +813,11 @@ body {
 .header {
   background-color: var(--wite-bg-color--);
   border-bottom: 1px solid #eeeeee;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 10;
 }
 
 .header__container {
@@ -1934,6 +1970,7 @@ body {
 
 .gallery__item {
   width: 370px;
+  border: 1px solid #eeeeee;
 }
 
 @media screen and (max-width: 767.98px) {
@@ -1970,12 +2007,11 @@ body {
 
 .gallery__content {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
 }
 
 @media screen and (min-width: 768px) {
   .gallery__content {
-    padding: 20px 15px;
+    padding: 20px 24px;
   }
 }
 
@@ -2002,6 +2038,7 @@ body {
           box-sizing: border-box;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  height: 100%;
 }
 
 .gallery__an {
@@ -2035,6 +2072,20 @@ body {
   line-height: 28px;
   letter-spacing: 0.03em;
   color: var(--sekondari-txt-color2--);
+}
+
+@media screen and (max-width: 767.98px) {
+  .gallery__overley-text {
+    padding: 20px 20px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .gallery__overley-text {
+    padding: 63px 24px;
+    font-size: 18px;
+  }
 }
 
 .gallery__link:hover, .gallery__link:focus {

@@ -61,4 +61,8 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-txt-color--);
+  padding-top: 80px;
+  @include mq(mobile-only){
+    padding-top: 61px;
+  }
 }

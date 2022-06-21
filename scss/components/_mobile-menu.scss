@@ -43,6 +43,7 @@
 .menu-button {
   
 display: inline-flex;
+
 margin: 0;
 padding: 0;
 border: none;
@@ -170,6 +171,16 @@ line-height: 22px;
 letter-spacing: 0.02em;
 
 color: #2196F3;
+
+@include mq(mobile-only){
+    font-size: 12px;
+}
+@include mq(mobile){
+font-size: 18px;
+}
+
+
+
 }
 
 .mobil-contact__item {

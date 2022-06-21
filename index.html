@@ -313,27 +313,73 @@
           <h2 class="profession__title">Чем мы занимаемся</h2>
           <ul class="profession__list">
             <li class="profession__item">
-              <img
-                src="./images/we-are-doing1.jpg"
+              <picture>
+                <!-- десктоп -->
+                <source media="(min-width: 1200px)" srcset="
+                                                            ./images/work/img.jpg  1x,
+                                                            ./images/work/img@2x.jpg  2x
+                                                          " type="image/jpg">
+              
+              
+                
+              
+                <!-- дефолт -->
+                <img class="team__img" src="./images/work/img.jpg" alt="человек за ПК, верстка" width="370"
+                   loading="lazy">
+              </picture>
+              <!-- <img
+              srcset="
+              ./images/work/img.jpg 370w,
+              ./images/work/img@2x.jpg 740px
+              "
+              sizes="(min-width: 1200px) 370px, 100vw"
+                
                 alt="человек за ПК, верстка"
-                width="370"
-              />
+                
+              /> -->
               <p class="profession__text">Десктопные преложения</p>
             </li>
             <li class="profession__item">
-              <img
+              <picture>
+                <!-- десктоп -->
+                <source media="(min-width: 1200px)" srcset="
+                                                                          ./images/work/img-1.jpg  1x,
+                                                                          ./images/work/img@2x-1.jpg  2x
+                                                                        " type="image/jpg">
+              
+              
+              
+              
+                <!-- дефолт -->
+                <img class="team__img" src="./images/work/img-1.jpg" alt="разработка мобильных преложений" width="370" loading="lazy">
+              </picture>
+              <!-- <img
                 src="./images/we-are-doing2.jpg"
                 alt="разработка мобильных преложений"
                 width="370"
-              />
+              /> -->
               <p class="profession__text">мобильные преложения</p>
             </li>
             <li class="profession__item">
-              <img
+              <picture>
+                <!-- десктоп -->
+                <source media="(min-width: 1200px)" srcset="
+                                                                                        ./images/work/img-2.jpg  1x,
+                                                                                        ./images/work/img@2x-2.jpg  2x
+                                                                                      " type="image/jpg">
+              
+              
+              
+              
+                <!-- дефолт -->
+                <img class="team__img" src="./images/work/img-2.jpg" alt="ПК, работа с графикой" width="370"
+                  loading="lazy">
+              </picture>
+              <!-- <img
                 src="./images/we-are-doing3.jpg"
                 alt="ПК, работа с графикой"
                 width="370"
-              />
+              /> -->
               <p class="profession__text">Дезайнерские решения</p>
             </li>
           </ul>

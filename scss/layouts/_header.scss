@@ -3,7 +3,12 @@
 .header {
   background-color: var(--wite-bg-color--);
   border-bottom: 1px solid #eeeeee;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 10;
+  
   &__container {
     display: flex;
     align-items: center;
